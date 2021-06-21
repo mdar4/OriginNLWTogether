@@ -35,6 +35,7 @@ h1{
     color: var(--title-color);
     -webkit-font-smoothing: auto;
 }
+
 .button{
     background-color: var(--base-color);
     color: var(--text-color-ligth);
@@ -49,6 +50,7 @@ h1{
 .button:hover{
     background: var(--base-color-alt);
 }
+
 .divider-1{
     height: 1px;
     background: linear-gradient(270deg,hsla(var(--hue),36%,57%,1)0%,hsla(var(--hue),65%,88%,0.34)100%)
@@ -56,7 +58,6 @@ h1{
 
 /*-------------------- Layout -----------------------*/
 .container{
-    width: 100%;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
@@ -69,14 +70,17 @@ h1{
     padding: 5rem 0;
 }
 
-#header{
+#header {
     border-bottom: 1px solid #e4e4e4;
     margin-bottom: 2rem;
     display: flex;
 
     width: 100%;
     position: fixed;
+    top: 0;
+    left:0;
     z-index: 100;
+    background-color: var(--body-color);
 }
 nav{
     height: 4.5rem;
@@ -85,12 +89,15 @@ nav{
     justify-content: space-between;
 }
 .logo{
-
+    font: 700 1.31rem 'Poppins',sans-serif;
+    color: var(--base-color);
 }
 .logo span{
     color: var(--base-color);
 }
-
+main{
+    margin-top: 4.5rem;
+}
 /*-------------------- Home -----------------------*/
 #home{
     overflow: hidden;
@@ -129,4 +136,5 @@ nav{
 }
 #home .text p {
     margin-bottom: 2rem;
+    max-width: 100%;
 }
