@@ -8,13 +8,16 @@
   a {
     text-decoration: none;
   }
+  ul {
+    list-style: none;
+  }
   
   img {
     width: 100%;
     height: auto;
   }
   
-  /*-------------------- Variáveis ----------------------*/
+  /*------------------- Variáveis ---------------------*/
   :root {
     --header-height: 4.5rem;
   
@@ -38,7 +41,7 @@
     -webkit-font-smoothing: antialiased;
   }
   
-  h1 {
+  .title {
     font: 700 1.875rem 'Poppins', sans-serif;
     color: var(--title-color);
     -webkit-font-smoothing: auto;
@@ -98,7 +101,7 @@
   }
 
   main {
-    margin-top: var(--header-height);
+    margin-top: calc(var(--header-height) + 2rem);
   }
 
 /*--------------------- Logo --------------------------*/
@@ -111,13 +114,67 @@
     color: var(--base-color);
   }
 
-  /*-------------------- Navegação -----------------------*/
+  /*------------------- Navegação ----------------------*/
   nav {
     height: var(--header-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+  }
+  
+  nav ul li {
+      text-align: center;
+  }
+  nav ul li a{
+      transition: 0.3s;
+      position: relative; /* Elemento pai */
+  }
+  nav ul li a:hover {
+      color: var(--base-color);
+  }
+  nav ul li a::after{
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: var(--base-color);
+
+      /* display:block;
+      padding: 1.5rem;  Dessa forma preenche todo o espaço do padding*/
+
+      position: absolute; /*Para funcionar o elemento pai deve possuir position: relative;*/
+      left: 0; /* Tira o elemento da Esquerda */
+      bottom: -1.5rem; /* Trás o elemento para baixo.*/
+
+      transition: width 0.2s;
+  }
+  nav ul li a:hover::after{
+    width: 100%; /* É preenchido somente após o hover*/
+  }
+  nav .menu {
+    opacity: 0;
+    visibility: hidden;
+  }
+  /*-------------- Show menu -----------------------*/
+  nav.show .menu{
+    opacity: 1;
+    visibility: visible;
+
+    background: var(--body-color);
+      
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  nav.show .menu{
+      display: grid;
+      place-content: center;
+  }
+  nav.show ul.grid{
+    gap: 4rem;
   }
 
 /*-------------------- Home -----------------------*/
