@@ -1,4 +1,4 @@
-# NLW Together - Missão Origini
+# NLW Together - Missão Origin
 
 Site do BeautySaloon construído durante os 5 dias de Missâo Origin da NLW Together.
 Embora já tenha conhecimento prévio de HTML,CSS e JS, opitei por participar da missão Origin afim de fixar conteúdos.
