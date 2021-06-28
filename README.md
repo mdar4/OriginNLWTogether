@@ -1,6 +1,6 @@
 # NLW Together - Missão Origin
 
-Site do BeautySaloon construído durante os 5 dias de Missâo Origin da NLW Together.
+Site do BeautySaloon construído durante os 5 dias de Missão Origin da NLW Together por mentoria do Maik Brito.
 Embora já tenha conhecimento prévio de HTML,CSS e JS, opitei por participar da missão Origin afim de fixar conteúdos.
 
 <img src='https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F40551fa5-e744-4ccc-a7cb-c5cf1e3b2e3d%2Fpreview.png?table=block&id=34780b25-a834-4113-9ba1-ce47f05045fe&spaceId=08f749ff-d06d-49a8-a488-9846e081b224&width=3840&userId=bd6c1a26-97a1-4a92-8254-5a65cbf8464c&cache=v2'>
